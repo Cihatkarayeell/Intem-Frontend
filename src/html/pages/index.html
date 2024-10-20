@@ -1,0 +1,570 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+
+<div id="modal" class="modal video-modal">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">
+        <img src="/img/icon/close-black-button.svg" alt="">
+      </span>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pN2yLAtMDjg?si=nczEtABQQUFwTRgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="cookieModal" class="cookie-modal">
+    <div class="cookie-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Çerez Politikası</h2>
+      <p>
+        Bu web sitesinde çerezler kullanılıyor! Detaylı bilgi için 
+        <a href="#">Çerez Politikası</a> içeriğini okuyabilirsiniz.
+      </p>
+      <div class="cookie-buttons">
+        <button class="accept-btn">Kabul et</button>
+        <button class="reject-btn">Reddet</button>
+      </div>
+    </div>
+</div>
+<section class="section">
+    <div class="loading-page" id="loadingPage">
+        <div class="brand-logo">
+            <img src="/img/logo/brand-logo.svg" width="190" height="60" alt="">
+        </div>
+        <div class="loading-container">
+            <div class="loading-bar">
+              <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" id="home-hero">
+    <div class="hero-section hero">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="hero-backg">
+                    <video autoplay muted loop >
+                        <source src="/img/video/home-hero.mp4" type="video/mp4">
+                    </video>
+                    <div class="text">
+                        <div class="header">
+                            <h1 class="title">Experience The Quality & Creativity in Harmony</h1>
+                            <div class="home-hero-subtitle">
+                                We <strong>design and produce</strong> knitwear for the international high-street fashion brands since 1993, <strong>offering full service</strong> from yarn r&d to export.
+                            </div>
+                        </div>
+                        <div class="home-hero-links">
+                            <a href="javascript:void();" class="discover-more">
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.0011 13.4825C8.90548 13.3868 8.85176 13.257 8.85176 13.1217C8.85176 12.9864 8.90548 12.8566 9.0011 12.7608L14.2566 7.5045L0.510652 7.5045C0.375219 7.5045 0.245332 7.4507 0.149566 7.35494C0.0538003 7.25917 -2.95541e-07 7.12928 -2.89621e-07 6.99385C-2.83701e-07 6.85842 0.0538003 6.72853 0.149566 6.63276C0.245332 6.537 0.375219 6.4832 0.510652 6.4832L14.2566 6.4832L9.0011 1.22688C8.9109 1.13008 8.8618 1.00204 8.86413 0.869747C8.86646 0.737453 8.92006 0.61123 9.01362 0.517669C9.10718 0.424109 9.2334 0.370516 9.36569 0.368182C9.49799 0.365848 9.62602 0.414954 9.72283 0.505156L15.8507 6.63299C15.9463 6.72874 16 6.85853 16 6.99385C16 7.12917 15.9463 7.25896 15.8507 7.35471L9.72283 13.4825C9.62708 13.5782 9.49729 13.6319 9.36196 13.6319C9.22664 13.6319 9.09685 13.5782 9.0011 13.4825Z" fill="white"/>
+                                </svg>
+                                <span>Discover More</span>
+                            </a>
+                            <a href="javascript:void();" class="whatch-video" id="openModalBtn">
+                                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                                </svg>                            
+                                <span>Watch Video</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-backg">
+                    <video autoplay muted loop >
+                        <source src="/img/video/home-hero.mp4" type="video/mp4">
+                      </video>
+                  <div class="text">
+                    <div class="header">
+                        <h1 class="title">Experience The Quality & Creativity in Harmony</h1>
+                        <div class="home-hero-subtitle">
+                            We <strong>design and produce</strong> knitwear for the international high-street fashion brands since 1993, <strong>offering full service</strong> from yarn r&d to export.
+                        </div>
+                    </div>
+                    <div class="home-hero-links">
+                        <a href="javascript:void(0);" class="discover-more">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.0011 13.4825C8.90548 13.3868 8.85176 13.257 8.85176 13.1217C8.85176 12.9864 8.90548 12.8566 9.0011 12.7608L14.2566 7.5045L0.510652 7.5045C0.375219 7.5045 0.245332 7.4507 0.149566 7.35494C0.0538003 7.25917 -2.95541e-07 7.12928 -2.89621e-07 6.99385C-2.83701e-07 6.85842 0.0538003 6.72853 0.149566 6.63276C0.245332 6.537 0.375219 6.4832 0.510652 6.4832L14.2566 6.4832L9.0011 1.22688C8.9109 1.13008 8.8618 1.00204 8.86413 0.869747C8.86646 0.737453 8.92006 0.61123 9.01362 0.517669C9.10718 0.424109 9.2334 0.370516 9.36569 0.368182C9.49799 0.365848 9.62602 0.414954 9.72283 0.505156L15.8507 6.63299C15.9463 6.72874 16 6.85853 16 6.99385C16 7.12917 15.9463 7.25896 15.8507 7.35471L9.72283 13.4825C9.62708 13.5782 9.49729 13.6319 9.36196 13.6319C9.22664 13.6319 9.09685 13.5782 9.0011 13.4825Z" fill="white"/>
+                            </svg>
+                            <span>Discover More</span>
+                        </a>
+                        <a href="javascript:void(0);" class="discover-more">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                            </svg>                            
+                            <span>Watch Video</span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-backg">
+                    <video autoplay muted loop >
+                        <source src="/img/video/home-hero.mp4" type="video/mp4">
+                      </video>
+                  <div class="text">
+                    <div class="header">
+                        <h1 class="title">Experience The Quality & Creativity in Harmony</h1>
+                        <div class="home-hero-subtitle">
+                            We <strong>design and produce</strong> knitwear for the international high-street fashion brands since 1993, <strong>offering full service</strong> from yarn r&d to export.
+                        </div>
+                    </div>
+                    <div class="home-hero-links">
+                        <a href="javascript:void(0);" class="discover-more">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.0011 13.4825C8.90548 13.3868 8.85176 13.257 8.85176 13.1217C8.85176 12.9864 8.90548 12.8566 9.0011 12.7608L14.2566 7.5045L0.510652 7.5045C0.375219 7.5045 0.245332 7.4507 0.149566 7.35494C0.0538003 7.25917 -2.95541e-07 7.12928 -2.89621e-07 6.99385C-2.83701e-07 6.85842 0.0538003 6.72853 0.149566 6.63276C0.245332 6.537 0.375219 6.4832 0.510652 6.4832L14.2566 6.4832L9.0011 1.22688C8.9109 1.13008 8.8618 1.00204 8.86413 0.869747C8.86646 0.737453 8.92006 0.61123 9.01362 0.517669C9.10718 0.424109 9.2334 0.370516 9.36569 0.368182C9.49799 0.365848 9.62602 0.414954 9.72283 0.505156L15.8507 6.63299C15.9463 6.72874 16 6.85853 16 6.99385C16 7.12917 15.9463 7.25896 15.8507 7.35471L9.72283 13.4825C9.62708 13.5782 9.49729 13.6319 9.36196 13.6319C9.22664 13.6319 9.09685 13.5782 9.0011 13.4825Z" fill="white"/>
+                            </svg>
+                            <span>Discover More</span>
+                        </a>
+                        <a href="javascript:void(0);" class="discover-more">
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.60695 16C1.34 15.9995 1.07778 15.9295 0.846083 15.797C0.324346 15.5013 0 14.9274 0 14.3044V1.69572C0 1.07094 0.324346 0.49877 0.846083 0.203119C1.0833 0.0667878 1.35278 -0.00332087 1.62636 0.000120885C1.89995 0.00356264 2.16758 0.0804287 2.40129 0.222685L13.1773 6.67309C13.4019 6.81391 13.587 7.00946 13.7154 7.24141C13.8437 7.47335 13.911 7.73409 13.911 7.99917C13.911 8.26425 13.8437 8.52499 13.7154 8.75693C13.587 8.98888 13.4019 9.18443 13.1773 9.32525L2.39955 15.7774C2.16038 15.922 1.88643 15.9989 1.60695 16Z" fill="white"/>
+                            </svg>                            
+                            <span>Watch Video</span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper-pagination">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="home-slider-pagination">
+                    <div class="number">1</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-slider-pagination">
+                    <div class="number">2</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-slider-pagination">
+                    <div class="number">3</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="bottom-arrow">
+            <div class="icon">
+                <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 1L11 11.7692L1 1" stroke="white" stroke-linecap="square"/>
+                </svg>                    
+            </div>
+        </div>
+        <div class="share-block">
+            <div class="vertical-line"></div>
+            <div class="share-links-column">
+                <a href="javascript:void(0);" class="share-item">
+                    <div class="icon">
+                        <img src="/img/icon/facebook.svg" alt="">
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="share-item">
+                    <div class="icon">
+                        <img src="/img/icon/instagram.svg" alt="">
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="share-item">
+                    <div class="icon">
+                        <img src="/img/icon/x.svg" alt="">
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="share-item">
+                    <div class="icon">
+                        <img src="/img/icon/linkden.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="rotate-text">Share Page</div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="our-story" id="ourStory">
+        <div class="container">
+            <div class="our-story-card">
+                <div class="img">
+                    <img src="/img/card-img/our-story-img.png" width="624" height="608" alt="">
+                </div>
+                <div class="text">
+                    <div class="header">
+                        <h1 class="title">OUR STORY</h1>
+                    </div>
+                    <div class="desc">
+                        <div class="strong">Design, quality and expertise of craftsmanship</div>
+                        remain at the heart of our business <div class="strong">since 
+                            1993</div>, offering full service <div class="strong">in knitwear production</div> from yarn r&d to export.
+                    </div>
+                    <a href="javascript:void(0);" class="card-link card-link-hover">
+                        <div class="icon">
+                            <img src="/img/icon/right-arrow.svg" alt="">
+                        </div>
+                        <span>Read more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="design-block home" id="design-block">
+        <div class="container">
+            <div class="design-card" style="height: 56.8rem;">
+                <div class="text">
+                    <div class="header">
+                        <h1 class="title">DESIGN</h1>
+                    </div>
+                    <div class="desc">
+                        <div class="strong">Every brief is unique</div>, we are versatile and adapt to the needs for your collections. We love to push boundaries, 
+                        to fully express creativity and deliver maximum value.
+                    </div>
+                    <div class="desc">
+                        Our international design team that are based in London&Istanbul, <div class="strong">aiming to craft remarkable success</div>in bringing out the best for our clients.
+                    </div>
+                    <a href="javascript:void(0);" class="card-link card-link-hover">
+                        <div class="icon">
+                            <img src="/img/icon/right-arrow.svg" alt="">
+                        </div>
+                        <span>Read more</span>
+                    </a>
+                </div>
+                <div class="img">
+                    <img src="/img/card-img/design-card.png" width="515" height="568" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="header-line">
+        <div class="title">CLIENT PORTFOLIO</div>
+    </div>
+</section>
+<section class="section section-client" id="our-clients-section">
+    <div class="references" id="references">
+        <div class="references-slider">
+            <div class="swiper swiper-references">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/mango.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/lpp.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/zara.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/rıver-ısland.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/ms.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/bestseller.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/rıver-ısland.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/ms.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/mango.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/lpp.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/zara.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/rıver-ısland.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/ms.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/bestseller.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/rıver-ısland.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-img">
+                        <img src="/img/references/ms.svg" loading="lazy" alt="Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-huge" style="display: none;">
+                <button class="btn-navigation btn-navigation-light  prev">
+                    <img data-src="img/icon/slider-prev-white.svg" width="15" height="26" class="lazyload"
+                        src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20768%20432%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                        alt="Prev">
+                </button>
+                <button class="btn-navigation btn-navigation-light next">
+                    <img data-src="img/icon/slider-next-white.svg" width="15" height="26" class="lazyload"
+                        src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20768%20432%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                        alt="Next">
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="showroom" id="showroom">
+        <div class="showroom-card">
+            <div class="card-img">
+                <img src="/img/card-img/showroom.png" width="1340" height="541" alt="">
+            </div>
+            <div class="text-card">
+                <div class="header">
+                    <h1 class="title">SHOWROOM</h1>
+                </div>
+                <div class="desc">
+                    Always excited to welcome you to present our collections at the showroom. This is our happy place. 
+                </div>
+                <a href="javascript:void(0);" class="card-link card-link-hover">
+                    <div class="icon">
+                        <img src="/img/icon/right-arrow.svg" alt="">
+                    </div>
+                    <span>Read more</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="header-line">
+        <div class="title">KEY FIGURES</div>
+    </div>
+</section>
+<section class="section">
+    <div class="info-box-wrap" id="img-box-wrap">
+        <div class="container">
+            <div class="boxes">
+                <div class="box-item">
+                    <div class="top-text">
+                        <div class="strong-text">30K</div>
+                        <div class="thin-text">pcs/day </div>
+                    </div>
+                    <div class="bottom-text">
+                        <span>
+                            Garment Capacity
+                        </span>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <div class="top-text">
+                        <div class="strong-text">800+</div>
+                    </div>
+                    <div class="bottom-text">
+                        <span>
+                            Employees
+                        </span>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <div class="top-text">
+                        <div class="strong-text">55K</div>
+                        <div class="thin-text">m2</div>
+                    </div>
+                    <div class="bottom-text">
+                        <span>
+                            Production Area
+                        </span>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <div class="top-text">
+                        <div class="strong-text">12K</div>
+                        <div class="thin-text">kg/day</div>
+                    </div>
+                    <div class="bottom-text">
+                        <span>
+                            Yarn Production
+                        </span>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <div class="top-text">
+                        <div class="strong-text">68%</div>
+                    </div>
+                    <div class="bottom-text">
+                        <span>
+                            Women Empowerment
+                        </span>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <div class="top-text">
+                        <div class="strong-text">5.6M</div>
+                        <div class="thin-text">kWh</div>
+                    </div>
+                    <div class="bottom-text">
+                        <span>
+                            Solar Powerplant
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="card-link card-link-hover">
+                <div class="icon">
+                    <img src="/img/icon/right-arrow.svg" alt="">
+                </div>
+                <span>Learn more</span>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="image-layout" id="img-layout">
+        <div class="image first">
+            <div class="img">
+                <img src="/img/card-img/img-layout-1.png" alt="">
+            </div>
+            <div class="img">
+                <img src="/img/card-img/playful-card.png" alt="">
+                <div class="img-card-text">
+                    <p>DETAILS MAKE DIFFERENCE</p>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="/img/card-img/img-layout-2.png" alt="">
+        </div>
+        <div class="image column">
+            <img src="/img/card-img/img-layout-3.png" alt="">
+            <div class="img-text-box">
+                <span>
+                    Passionate for tailoring your needs and stories.
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="header-line">
+        <div class="title">OUR JOURNEY & FACILITIES</div>
+    </div>
+</section>
+<section class="section">
+    <div class="our-journey" id="our-journey">
+        <div class="container">
+            <div class="our-journey-block">
+                <div class="card-item">
+                    <div class="card-img">
+                        <img src="/img/card-img/journey-card-1.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="title">1993 ISTANBUL FACTORY</div>
+                        <div class="sub-title">HQ & PRODUCTION 20K m2</div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-img">
+                        <img src="/img/card-img/journey-card-2.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="title">2012 DUZCE FACTORY</div>
+                        <div class="sub-title">KNITTING OPERATIONS 5K m2</div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-img">
+                        <img src="/img/card-img/journey-card-3.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <div class="title">2019 MALATYA FACTORY</div>
+                        <div class="sub-title">YARN & KNITWEAR PRODUCTION 30K m2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section newsletter">
+    <div class="container">
+        <div class="newsletter-block">
+            <div class="header">
+                <div class="title">JOIN OUR NEWSLETTER</div>
+            </div>
+            <div class="input-layout">
+                <div class="input-group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="input-group">
+                    <label for="surname">SURNAME</label>
+                    <input type="text" id="surname" placeholder="Your Surname">
+                </div>
+                <div class="input-group">
+                    <label for="mail">NAME</label>
+                    <input type="mail" id="mail" placeholder="Your Email">
+                </div>
+                <div class="submit-button">
+                    <button>SUBMIT</button>
+                </div>
+            </div>
+            <div class="checkbox-group">
+                <a href="javascipt:();" class="checkbox-item">
+                    <input type="checkbox" id="gdpr">
+                    <div class="box">
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                        </svg>                            
+                    </div>
+                    <label for="gdpr">I have read and agree to the GDPR</label>
+                </a>
+                <a href="javascript:void(0);" class="checkbox-item">
+                    <input type="checkbox" id="privacy">
+                    <div class="box">
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                        </svg>                            
+                    </div>
+                    <label for="privacy">I have read and agree to the GDPR</label>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+ 

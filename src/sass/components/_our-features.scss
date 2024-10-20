@@ -1,0 +1,74 @@
+.our-features{
+    width: 100%;
+    height: 100%;
+    .features-wrap{
+        padding-left: 6rem;
+        @include lg{
+            padding-left: 0;
+        }
+    }
+    @include lg{
+        padding: 0 3rem;
+        margin-top: 4rem;
+    }
+}
+.features-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include lg{
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem 0;
+        height: 100% !important;
+    }
+}
+.feature-item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    width: calc((100% - 16rem) / 3);
+    @include lg{
+        width: 100%;
+        align-items: center;
+    }
+    .header{
+        height: 5.8rem;
+        .title{
+            font-size: 1.7rem;
+            line-height: 2rem;
+            color: #000000;
+            opacity: .5;
+            @include medium;
+            @include sm{
+                text-align: center;
+            }
+        }
+        @include lg{
+            height: auto;
+            margin-bottom: 2rem;
+        }
+    }
+    .content{
+        font-size: 1.7rem;
+        line-height: 2rem;
+        @include light;
+        opacity: .8;
+        color: #000000;
+        @include bigger-than-xl{
+            padding-right: 2rem;
+        }
+        @include lg{
+            text-align: center;
+        }
+    }
+}
+.vertical-line{
+    width: .1rem;
+    height: 100%;
+    background-color: #C8BAAF;
+}

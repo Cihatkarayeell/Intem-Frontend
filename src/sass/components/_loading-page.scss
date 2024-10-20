@@ -1,0 +1,56 @@
+.loading-page{
+    width: 100%;
+    height: 100vh;
+    background-color: #F0ECE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transition: all 500ms ease;
+    &.removed{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+    }
+    .brand-logo{
+        margin-bottom: 4rem;
+    }
+}
+  .loading-container {
+    width: 100%;
+    max-width:40rem;
+    @include mini{
+      max-width: 30rem;
+    }
+  }
+  
+  .loading-bar {
+    width: 100%;
+    height: .2rem;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .loading-progress {
+    width: 0;
+    height: 100%;
+    background-color: black;
+    animation: load 3s linear forwards;
+  }
+  
+  @keyframes load {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  

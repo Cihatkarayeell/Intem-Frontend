@@ -1,0 +1,199 @@
+#footer{
+	background-color: rgb(200, 186, 175,.1);
+	margin-top: 5.2rem;
+	height: 52.1rem;
+	position: relative;
+	@include bigger-than-xl{
+        .container{
+            max-width: 128rem;
+			width: 100%;
+        }
+    }
+	@include xl{
+		padding: 0 5rem;
+	}
+	@include md{
+		height: 100%;
+		padding-bottom: 16.2rem;
+	}
+	@include sm{
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+	@include mini{
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	.footer {
+		display: block;
+		width: 100%;
+		padding-top: 4rem;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		.brand-logo{
+			margin-bottom: 2.6rem;
+			width: 9.5rem;
+			height: 3rem;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.footer-row{
+			display: flex;
+			align-items: flex-start;	
+			width: 100%;
+			justify-content: space-between;
+			@include md{
+				flex-direction: column;
+			}
+			.footer-info{
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				.tel-button{
+					background-color: #3B3B3B;
+					border-radius: .5rem;
+					padding: 1.5rem 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 0 1rem;
+					margin-bottom: 1.6rem;
+					text-decoration: none;
+					width: 18.7rem;
+					span{
+						font-size:1.5rem;
+						line-height: 1.8rem;
+						color: #ffffff;
+						@include medium;
+					}
+				}
+				.info-mail{
+					font-size:1.5rem;
+					line-height: 1.2rem;
+					color: #000000;
+					@include regular;
+					margin-bottom: 3.8rem;
+					border-bottom: .05rem solid #000000;
+					margin-top: .55rem;
+				}
+				.social-media{
+					.header{
+						.title{
+							font-size:1.5rem;
+							line-height: 1.8rem;
+							color: #000000;
+							@include medium;
+							margin-bottom: 1rem;
+						}
+					}
+					.social-media-items{
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
+						gap: 0 1rem;
+						.social-media-item{
+							width: 3rem;
+							height: 3rem;
+						}
+					}
+				}
+			}
+			.footer-list-wrap{
+				display: flex;
+				align-items: flex-start;
+				gap: 0 3.2rem;
+				justify-content: flex-start;
+				margin-left: 14.1rem;
+				width: 100%;
+				@include md{
+					margin-left: 0;
+					margin-top: 7.2rem;
+					width: 100%;
+					gap: 0 2.9rem;
+				}
+				@include sm{
+					flex-direction: column;
+				}
+				.footer-list{
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					width: 100%;
+					max-width: 29.6rem;
+					.title{
+						font-size: 1.5rem;
+						line-height: 1.8rem;
+						color: #000000;
+						@include medium;
+						width: 100%;
+						padding-bottom: 1.5rem;
+						border-bottom: .1rem solid rgb(0, 0, 0,.5);
+					}
+					@include sm{
+						max-width: 100%;
+						width: 100%;
+						margin-bottom: 2.4rem;
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+					ul{
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						margin-top: 1.5rem;
+						a{
+							font-size: 1.5rem;
+							line-height: 3.6rem;
+							color: #000000;
+							@include light;
+						}
+	
+					}
+				}
+			}
+		}
+	}
+	.bottom{
+		background-color: rgb(200, 186, 175,.1);
+		width: 100%;
+		height: 8.9rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		@include xl{
+			padding: 0 2rem;
+		}
+		@include sm{
+			padding-left: 5rem;
+			padding-right: 5rem;
+		}
+		@include mini{
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+		.footer-bottom{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+		span{
+			font-size: 1.3rem;
+			line-height: 1.6rem;
+			color: #000000;
+			@include light;
+		}
+		.top-button{
+			margin-left: auto;
+		}
+	}
+}

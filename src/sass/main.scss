@@ -1,0 +1,61 @@
+/* ==========  Variables, Mixins, Fonts, Media Queries  ========== */
+@import 'config/mixins';
+@import 'config/reset';
+@import 'config/vars';
+@import 'config/media-query';
+@import 'config/font'; 
+
+/* ==========  Bootstrap - 5 ========== */
+
+/* ==========  Global  ========== */
+@import 'config/base';
+
+/* ==========  Partials  ========== */
+@import 'partial/grid';
+@import 'partial/helper';
+@import 'partial/label';
+@import 'partial/header';
+@import 'partial/footer';
+
+/* ==========  Typography  ========== */
+@import 'typography/heading';
+@import 'typography/paragraph';
+
+/* ==========  Forms  ========== */
+@import 'components/form/placeholder';
+
+/* ==========  Components  ========== */
+@import 'components/blockquote';
+@import 'components/box';
+@import 'components/container';
+@import 'components/figure';
+@import 'components/hr';
+@import 'components/iframe';
+@import 'components/section';
+@import 'components/hero';
+@import 'components/slider';
+@import 'components/loading-page';
+@import 'components/video-modal';
+@import 'components/cookie-modal';
+@import 'components/our-story';
+@import 'components/design';
+@import 'components/header-line';
+@import 'components/references-slider';
+@import 'components/showroom';
+@import 'components/info-box-wrap';
+@import 'components/img-layout';
+@import 'components/our-journey';
+@import 'components/newsletter';
+@import 'components/breadcrumb';
+@import 'components/our-features';
+@import 'components/news-slider';
+@import 'components/news-detail-modal';
+@import 'components/certificates';
+@import 'components/text-block';
+@import 'components/who-we-are';
+@import 'components/contact-block';
+@import 'components/sss';
+@import 'components/statik-text-block';
+@import 'components/career-form';
+// @import 'components/table';
+  

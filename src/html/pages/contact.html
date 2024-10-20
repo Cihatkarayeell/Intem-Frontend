@@ -1,0 +1,280 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}Front end Starter Kit{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+<div id="cookieModal" class="cookie-modal">
+    <div class="cookie-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Çerez Politikası</h2>
+      <p>
+        Bu web sitesinde çerezler kullanılıyor! Detaylı bilgi için 
+        <a href="#">Çerez Politikası</a> içeriğini okuyabilirsiniz.
+      </p>
+      <div class="cookie-buttons">
+        <button class="accept-btn">Kabul et</button>
+        <button class="reject-btn">Reddet</button>
+      </div>
+    </div>
+</div>
+<section class="section subpage-hero" id="contact-hero">
+    <div class="hero-section hero">
+        <div class="hero-backg" style="background: url(/img/hero-backg/error-backg.png); background-position: center;
+        background-size: cover;">
+            <div class="text">
+                <div class="header">
+                    <h1 class="title">Get in touch.</h1>
+                    <div class="opacity-title">
+                        CONTACT
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="section breadcrumb contact">
+    <div class="container">
+        <nav>
+            <ol>
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <span>
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+              </span>
+              <li class="breadcrumb-item active">
+                <a href="#">Sustainability</a>
+              </li>
+            </ol>
+          </nav>
+    </div>
+</section>
+<section class="section">
+    <div class="contact-block">
+        <div class="container">
+            <div class="header">
+                <h1 class="title">
+                    <span>Contact with us.</span>
+                    <span>We’re here to assist you.</span>
+                </h1>
+            </div>
+            <div class="contact-inputs">
+                <div class="input-layout">
+                    <div class="input-group">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="input-group">
+                        <label for="surname">SURNAME</label>
+                        <input type="text" id="surname" placeholder="Your Surname">
+                    </div>
+                    <div class="input-group">
+                        <label for="mail">E-MAIL</label>
+                        <input type="mail" id="mail" placeholder="Your Email">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">PHONE</label>
+                        <input type="tel" id="phone" placeholder="Your Phone Number">
+                    </div>
+                </div>
+                <div class="input-layout">
+                    <div class="input-group">
+                        <label for="companyName">COMPANY NAME</label>
+                        <input type="text" id="companyName" placeholder="Your Name">
+                    </div>
+                    <div class="input-group message-group">
+                        <label for="message">MESSAGE</label>
+                        <input type="text" id="message" placeholder="Your Surname">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="checkbox-group">
+                        <a href="javascipt:();" class="checkbox-item">
+                            <input type="checkbox" id="gdpr">
+                            <div class="box">
+                                <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                                </svg>                            
+                            </div>
+                            <label for="gdpr">I have read and agree to the GDPR</label>
+                        </a>
+                        <a href="javascript:void(0);" class="checkbox-item">
+                            <input type="checkbox" id="privacy">
+                            <div class="box">
+                                <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                                </svg>                            
+                            </div>
+                            <label for="privacy">I have read and agree to the GDPR</label>
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" class="submit-button">
+                        <button>SUBMIT</button>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="header">
+                    <h1 class="title">CONTACT INFO</h1>
+                </div>
+                <div class="info-items">
+                    <div class="info-item">
+                        <h2 class="title">
+                            Always excited to welcome you to present our collections at the showroom.
+                        </h2>
+                    </div>
+                    <div class="info-item">
+                        <div class="adress">
+                            <div class="header">
+                                <div class="title">ISTANBUL HQ</div>
+                            </div>
+                            <div class="content">
+                                Akçaburgaz, 3097 Sk.
+                                No.18 Esenyurt
+                                İstanbul, Türkiye
+                            </div>
+                        </div>
+                        <div class="call">
+                            <div class="header">
+                                <div class="title">Call</div>
+                            </div>
+                            <div class="content">
+                                <a href="tel:+90 444 66 65">+90 444 66 65</a>
+                            </div>
+                        </div>
+                        <div class="ask">
+                            <div class="header">
+                                <div class="title">Ask</div>
+                            </div>
+                            <div class="content">
+                                <a href="javascript:void(0);">bilgi@intemtriko.com</a>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="card-link card-link-hover">
+                            <div class="icon">
+                                <img src="/img/icon/right-arrow.svg" alt="">
+                            </div>
+                            <span>See on the Map</span>
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <div class="adress">
+                            <div class="header">
+                                <div class="title">DUZCE FACTORY</div>
+                            </div>
+                            <div class="content">
+                                1. OSB Mah. 11. Sk.
+                                No.2 Yesilyurt
+                                Malatya, Türkiye
+                            </div>
+                        </div>
+                        <div class="call">
+                            <div class="header">
+                                <div class="title">Call</div>
+                            </div>
+                            <div class="content">
+                                <a href="tel:+90 444 66 65">+90 444 66 65</a>
+                            </div>
+                        </div>
+                        <div class="ask">
+                            <div class="header">
+                                <div class="title">Ask</div>
+                            </div>
+                            <div class="content">
+                                <a href="javascript:void(0);">bilgi@intemtriko.com</a>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="card-link card-link-hover">
+                            <div class="icon">
+                                <img src="/img/icon/right-arrow.svg" alt="">
+                            </div>
+                            <span>See on the Map</span>
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <div class="adress">
+                            <div class="header">
+                                <div class="title">MALATYA FACTORY</div>
+                            </div>
+                            <div class="content">
+                                Topcular, Duzce Sk.
+                                No.105/A 81750 Cilimli
+                                Duzce, Türkiye
+                            </div>
+                        </div>
+                        <div class="call">
+                            <div class="header">
+                                <div class="title">Call</div>
+                            </div>
+                            <div class="content">
+                                <a href="tel:+90 444 66 65">+90 444 66 65</a>
+                            </div>
+                        </div>
+                        <div class="ask">
+                            <div class="header">
+                                <div class="title">Ask</div>
+                            </div>
+                            <div class="content">
+                                <a href="javascript:void(0);">bilgi@intemtriko.com</a>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="card-link card-link-hover">
+                            <div class="icon">
+                                <img src="/img/icon/right-arrow.svg" alt="">
+                            </div>
+                            <span>See on the Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section newsletter">
+    <div class="container">
+        <div class="newsletter-block">
+            <div class="header">
+                <div class="title">JOIN OUR NEWSLETTER</div>
+            </div>
+            <div class="input-layout">
+                <div class="input-group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="input-group">
+                    <label for="surname">SURNAME</label>
+                    <input type="text" id="surname" placeholder="Your Surname">
+                </div>
+                <div class="input-group">
+                    <label for="mail">NAME</label>
+                    <input type="mail" id="mail" placeholder="Your Email">
+                </div>
+                <a href="javascript:void(0);" class="submit-button">
+                    <button>SUBMIT</button>
+                </a>
+            </div>
+            <div class="checkbox-group">
+                <a href="javascipt:();" class="checkbox-item">
+                    <input type="checkbox" id="gdpr">
+                    <div class="box">
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                        </svg>                            
+                    </div>
+                    <label for="gdpr">I have read and agree to the GDPR</label>
+                </a>
+                <a href="javascript:void(0);" class="checkbox-item">
+                    <input type="checkbox" id="privacy">
+                    <div class="box">
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.99614 10L0 6.00386L1.82111 4.18275L3.99614 6.36422L10.3539 0L12.175 1.82111L3.99614 10Z" fill="black"/>
+                        </svg>                            
+                    </div>
+                    <label for="privacy">I have read and agree to the GDPR</label>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+ 

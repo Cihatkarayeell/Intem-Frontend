@@ -1,0 +1,74 @@
+$grid-gutter-width: 30px !default;
+$screen-xs: 480px !default;
+$screen-sm: 768px !default;
+$screen-md: 1024px !default;
+$screen-lg: 1140px !default;
+$screen-lg-min: 1140px !default;
+$screen-xl: 1440px !default;
+
+$color-blue: blue;
+
+:root {
+  --font: 'Gotham', sans-serif;
+  --font-thin: 200;
+  --font-normal: 400;
+  --font-bold: 600;
+
+  --color-primary: #006db3;
+  --color-secondary: #da4648;
+
+  --color-success: #28a745;
+  --color-info: #3b7ddd;
+  --color-warning: #ffc107;
+  --color-error: #dc3545;
+
+  --color-body: #fff;
+  --color-box: #f8f8fa;
+
+  --color-heading: #000;
+  --color-text: #000;
+  --color-text-muted: #c4c4c4;
+  --color-link: var(--color-info);
+  --color-border: #e2e2e2;
+
+  --border-width: 2px;
+  --border-2-width: 4px;
+  --border: var(--border-width) solid var(--color-border);
+  --border-2: var(--border-width) solid var(--color-border);
+
+  --gap: 24px;
+
+  --radius: 4px;
+
+  --shadow: 0px 4px 15px rgba(22, 25, 31, 0.1);
+  --drop-shadow: drop-shadow(0px 4px 15px rgba(22, 25, 31, 0.1));
+
+  --transition-time: 0.3s;
+  --transition: all var(--transition-time);
+
+  color-scheme: light;
+
+  &[data-theme='dark'] {
+    --color-body: #3c3c4e;
+    --color-box: #343442;
+
+    --color-heading: #f4f9ff;
+    --color-text: #f4f9ff;
+    --color-text-muted: #efefef;
+    --color-border: #464656;
+
+    color-scheme: dark;
+  }
+}
+
+%reset-btn {
+  outline: none;
+  border: none;
+  background: none;
+  box-shadow: none;
+  user-select: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}

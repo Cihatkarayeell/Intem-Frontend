@@ -1,0 +1,42 @@
+.breadcrumb{
+    width: 100%;
+    padding-top: 1.6rem;
+    &.contact{
+        .container{
+            max-width: 128rem;
+        }
+    }
+    ol{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        opacity: .8;
+        li{
+            a{
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                @include light;
+                color: #000000;
+            }
+        }
+        span{
+            max-width: 1.2rem;
+            max-height: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    @include xl{
+        padding-left: 3rem;
+    }
+    @include md{
+        padding-left: 5rem;
+    }
+    @include sm{
+        padding-left: 5rem;
+    }
+    @include mini{
+        padding-left: 3rem;
+    }
+}

@@ -1,0 +1,266 @@
+.showroom{
+    width: 100%;
+    background-color: #F4F1EE;
+    margin-top: 8.4rem;
+    padding-top: 6.4rem;
+    margin-bottom: 6.4rem;
+    @include mini{
+        padding-top: 4.6rem;
+        margin-top: 5.2rem;
+        margin-bottom: 0;
+    }
+    .showroom-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        transform: translateX(1.5rem);
+        @include bigger-than-xl{
+            padding-left: 6.7rem;
+            padding-right: 6.7rem;
+            width: 100%;
+        }
+        @include md{
+            width: auto;
+        }
+        @include sm{
+            flex-direction: column;
+            transform: translateX(0);
+
+        }
+    }
+    .card-img{
+        max-width: 76.3rem ;
+        max-height: 54.1rem;
+        @include bigger-than-xl{
+            max-width: 101.7rem;
+            max-height: 72.2rem;
+            height: 72.2rem;
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        @include md{
+            max-width: 54.3rem;
+            max-height: 38.4rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        @include sm{
+            max-width: 100%;
+            max-height: 29.3rem;
+            width: 100%;
+            height: 29.3rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        
+        .card-img-wrap{
+            display: flex;
+            @include sm{
+                height: 100%;
+            }
+            img{
+                width: 67.5%;
+            }
+            .column{
+                display: flex;
+                flex-direction: column;
+                width: 32.5%;
+                img{
+                    width: 100%;
+
+                    &:first-child{
+                        height: 56.3%;
+                    }
+                    &:last-child{
+                        height: 43.7%;
+                    }
+                }
+            }
+        }
+    }
+    .text-card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 60.7rem;
+        background-color: rgb(250, 250, 250,.95);
+        padding: 4.8rem 7.7rem 5.5rem 6.2rem;
+        transform: translateX(-3rem);
+        @include bigger-than-xl{
+            max-width: 80.9rem;
+            max-height: 45.8rem;
+            right: 7rem;
+            height: 45.8rem;
+            padding-top: 6.4rem;
+            justify-content: flex-start;
+        }
+        @include xl{
+            height: 34.4rem;
+            padding: 4.8rem 7.7rem 5rem 6.2rem;
+        }
+        @include md{
+            max-width: 43.2rem;
+            right: 3.5rem;
+            padding-top: 3.5rem;
+            padding-right: 3.5rem;
+            padding-left: 3.5rem;
+        }
+        @include sm{
+            position: relative;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            padding-top: 2.7rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            background-color: #ffffff;
+            transform: translateX(0);
+        }
+        @include mini{
+            padding-left: 3rem;
+            padding-right: 3rem;
+            
+        }
+        .header{
+            .title{
+                font-size: 1.7rem;
+                line-height: 2rem;
+                @include medium;
+                color: #000000;
+                opacity: .5;
+                margin-bottom: 4rem;
+                @include md{
+                    margin-bottom: 2rem;
+                }
+                @include mini{
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+        .desc{
+            font-size: 2.8rem;
+            line-height: 3.4rem;
+            color: #000000;
+            @include light;
+            margin-bottom: 3rem;
+            opacity: .8;
+            .strong{
+                @include medium;
+                display: inline;
+            }
+            &:first-child{
+                margin-bottom: 4rem;
+            }
+            @include md{
+                font-size: 1.7rem;
+                line-height: 2rem;
+                margin-bottom: 0;
+            }
+            @include mini{
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+    &#ar-ge{
+        .text-card{
+            .desc{
+                font-size: 2rem;
+                line-height: 2.4rem;
+                @include md{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+    &.sub-page{
+        .text-card{
+            .desc{
+                font-size: 1.7rem;
+                line-height: 2rem;
+                .strong{
+                    @include medium;
+                }
+                @include mini{
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                }
+            }
+        }
+    }
+    &#aı-generated{
+        margin-bottom: 8.4rem;
+        .text-card{
+            padding-bottom: 7.1rem;
+            .header{
+                .title{
+                    margin-bottom: 3.7rem;
+                    @include md{
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            .desc{
+                font-size: 2rem;
+                line-height: 2.4rem;
+                margin-bottom: 0;
+                .strong{
+                    @include medium;
+                }
+                @include md{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+    &#hr-activities{
+        margin-top: 0;
+        padding-top: 6.4rem;
+    }
+    &#showroom{
+        .text-card{
+            .title{
+                margin-bottom: 3.7rem;
+            }
+        }
+    }
+    &#hr-activities{
+        .text-card{
+            padding-bottom: 7.1rem;
+            .header{
+                .title{
+                    margin-bottom: 3.7rem;
+                    @include md{
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            .desc{
+                font-size: 2rem;
+                line-height: 2.4rem;
+                margin-bottom: 0;
+                .strong{
+                    @include medium;
+                }
+                @include md{
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
