@@ -1,0 +1,23 @@
+{# prettier-ignore #}
+{% extends "./layout/layout-general.html" %}
+{% block title %}GPOD{% endblock %}
+{%block bodyClass %}body-home{% endblock %} {% block content %}
+
+
+<div class="modal-dialog modal-lg">
+    <div class="modal-box">
+        <div class="icon">
+            <img src="/img/icon/modal-icon.svg" alt="">
+        </div>
+        <h1 class="title">
+            Teşekkürler!
+        </h1>
+        <div class="desc">
+            Form başarı ile gönderildi. En kısa sürede sizinle iletişime geçilecektir.
+        </div>
+        <a href="javascript:;" class="close-button">
+            Kapat
+        </a>
+    </div>
+</div>
+{% endblock %}
