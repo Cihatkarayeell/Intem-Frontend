@@ -17,6 +17,23 @@
     
     .swiper{
         height: max-content;
+        .swiper-slide.swiper-slide-active{
+            position: relative;
+            transition: all 400ms ease;
+            &::after{
+                transition: all 400ms ease;
+                content: "";
+                right: 0;
+                top: 0;
+                width: .1rem;
+                background-color: #C8BAAF;
+                height: 100%;
+                position: absolute;
+                @include sm{
+                    display: none;
+                }
+            }
+        }
     }
     .header{
         .title{

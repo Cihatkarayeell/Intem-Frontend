@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper-news", {
     slidesPerView: 2,
-    spaceBetween: 30,
+    spaceBetween: 60,
     navigation: {
       nextEl: ".swiper-button-next-news",
       prevEl: ".swiper-button-prev-news",
@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper-news", {
       },
       1000: {
         slidesPerView: 2,
-        spaceBetween: 40,
+        spaceBetween: 60,
       }
       
     },
