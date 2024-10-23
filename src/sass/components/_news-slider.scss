@@ -7,11 +7,11 @@
         padding: 0 3rem;
     }
 }
-.news-slider{
+.news-slider{ 
     width: 100%;
     position: relative;
     padding-left: 6rem;
-    @include sm{
+    @include md{
         padding-left: 0;
     }
     
