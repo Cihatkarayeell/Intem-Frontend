@@ -1,7 +1,7 @@
 // Küçük cihazlar
 @mixin mini {
   // 414px ve aşağısı
-  @media (max-width: 414px) {
+  @media (max-width: ($screen-mini )) {
     @content;
   }
 }
@@ -65,7 +65,7 @@
   }
 }
 
-@mixin bigger-than-xl {
+@mixin bigger-than-lg {
   // 1140px ve yukarısı
   @media (min-width: $screen-lg) {
     @content;

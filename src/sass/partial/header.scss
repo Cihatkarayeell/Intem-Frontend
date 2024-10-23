@@ -46,6 +46,7 @@
 				align-items: center;
 				gap: 0 2.6rem;
 				justify-content: flex-end;
+				position: relative;
 				.language-button{
 					span{
 						font-size: 1.2rem;
@@ -53,47 +54,55 @@
 						color: #000000;
 						@include medium;
 					}
-					@include mini{
-						display: none;
-					}
+					
 				}
 				.search-button{
 					position: relative;
 					cursor: pointer;
-					.search-box{
+				}
+				.search-box{
+					position: absolute;
+					right: calc(100% - 3rem);
+					top: 50%;
+					transform: translateY(-50%);
+					border: .1rem solid rgb(0, 0, 0, .1);
+					transition: all 400ms ease;
+					border-radius: .5rem;
+					padding: 1.2rem;
+					padding-right: 0;
+					opacity: 0;
+					visibility: hidden;
+					background-color: #ffffff;
+					input{
+						border: none;
+						padding: 0;
+						background-color: transparent;
+						&::placeholder{
+							font-size: 1.3rem;
+							line-height: 1.4rem;
+							color: #000000;
+							opacity: .8;
+							@include medium;
+						}
+					}
+					.icon.search-box-link{
 						position: absolute;
-						right: calc(100% - 3rem);
+						right: 1rem;
 						top: 50%;
 						transform: translateY(-50%);
-						border: .1rem solid rgb(0, 0, 0, .1);
-						transition: all 400ms ease;
-						border-radius: .5rem;
-						padding: 1.2rem;
-						padding-right: 0;
-						opacity: 0;
-						input{
-							border: none;
-							padding: 0;
-							background-color: transparent;
-							&::placeholder{
-								font-size: 1.3rem;
-								line-height: 1.4rem;
-								color: #000000;
-								opacity: .8;
-								@include medium;
-							}
-						}
-						&.active{
-							opacity: 1;
-							transform: translateY(-50%) translateX(0);
-						}
-						@include mini{
-							z-index: 2;
-							bottom: -11rem;
-							top: auto;
-							background-color: #ffffff;
+						
+					}
+					&.active{
+						opacity: 1;
+						visibility: visible;
+						transform: translateY(-50%) translateX(0);
+					}
+					@include mini{
+						z-index: 2;
+						bottom: -11rem;
+						top: auto;
+						background-color: #ffffff;
 
-						}
 					}
 				}
 			}
@@ -128,6 +137,15 @@
 				@include md{
 					height: 100%;
 					max-height: 100%;
+				}
+				.language-button{
+					span{
+						font-size: 1.2rem;
+						line-height: 1.4rem;
+						color: #000000;
+						@include medium;
+					}
+					
 				}
 			}
 			.close-toggle{

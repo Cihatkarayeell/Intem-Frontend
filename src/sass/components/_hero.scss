@@ -4,19 +4,35 @@
     max-height: 75.5rem;
     position: relative;
     &.hero{
-        max-height: 75.5rem;
-        @include bigger-than-xl {
-            height: 100.7rem;
-            max-height: 100.7rem;
-        }
-        @include md{
-            height: 53.7rem;
+        @include xl {
+            height: calc(100vh - 9.6rem);
+            max-height: 100%;
         }
         .text{
             width: 100%;
             .title{
-                margin-top: 24.5rem;
+                margin-top: 0;
             }
+        }
+        @include md{
+            height: 53.7rem;
+        }
+       
+    }
+    video{
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 100%;
+        min-height: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        object-fit: cover;
+        source{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     .hero-backg{
@@ -26,7 +42,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
+        position: absolute;
+        left: 0;
+        top: 0;
         overflow: hidden;
         &:before{
             content: "";
@@ -46,116 +64,112 @@
             left: 0;
             top: 0;
         }
-        video{
-            position: absolute;
-            left: 0;
-            top: 0;
-            min-width: 100%;
-            min-height: 100%;
-            background-size: cover;
-            background-position: center;
-            source{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+    }
+    .text{
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include sm{
+            padding: 0 5.1rem;
+        }
+        @include mini{
+            padding: 0 2rem;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            z-index: 1;
+        }
+        .title{
+            font-size: 4.8rem;
+            line-height: 5.4rem;
+            color: #ffffff;
+            @include bold;
+            text-align: center;
+            font-family: "Philosopher", sans-serif;
+            margin-top: 32rem;
+            @include md{
+                font-size: 3.6rem;
+                line-height: 4rem;
+                margin-top: 15rem;
             }
         }
-        .text{
-            z-index: 1;
-            @include sm{
-                padding: 0 5.1rem;
+        .home-hero-subtitle{
+            margin-top: 2.5rem;
+            font-size: 2.6rem;
+            line-height: 3.1rem;
+            color: #ffffff;
+            text-align: center;
+            max-width: 65%;
+            @include light;
+            strong{
+                @include bold;
             }
-            .header{
+            @include md{
+                font-size: 2rem;
+                line-height: 2.4rem;
+            }
+            @include sm{
+                max-width: 100%;
+            }
+            @include mini{
+                display: none;
+            }
+        }
+        .subtitle{
+            margin-top: 2.6rem;
+            font-size: 1.7rem;
+            line-height: 2rem;
+            color: #ffffff;
+            opacity: .5;
+            text-align: center;
+            @include medium;
+        }
+        .home-hero-links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:0 3rem;
+            margin-top: 3.8rem;
+            a{
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
-                flex-direction: column;
-                z-index: 1;
-            }
-            .title{
-                font-size: 4.8rem;
-                line-height: 5.4rem;
-                color: #ffffff;
-                @include bold;
-                text-align: center;
-                font-family: "Philosopher", sans-serif;
-                margin-top: 32rem;
-                @include md{
-                    font-size: 3.6rem;
-                    line-height: 4rem;
-                    margin-top: 15rem;
-                }
-            }
-            .home-hero-subtitle{
-                margin-top: 2.5rem;
-                font-size: 2.6rem;
-                line-height: 3.1rem;
-                color: #ffffff;
-                text-align: center;
-                max-width: 65%;
-                @include light;
-                strong{
-                    @include bold;
-                }
-                @include md{
-                    font-size: 2rem;
-                    line-height: 2.4rem;
-                }
-                @include sm{
-                    max-width: 100%;
-                }
-                @include mini{
-                    display: none;
-                }
-            }
-            .subtitle{
-                margin-top: 2.6rem;
-                font-size: 1.7rem;
-                line-height: 2rem;
-                color: #ffffff;
-                opacity: .5;
-                text-align: center;
-                @include medium;
-            }
-            .home-hero-links{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap:0 3rem;
-                margin-top: 3.8rem;
-                a{
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    gap: 0 1rem;
-                    svg{
-                        transition: transform 600ms ease-in-out;
+                gap: 0 1rem;
+                svg{
+                    transition: transform 600ms ease-in-out;
 
-                    }
-                    span{
-                        font-size: 1.5rem;
-                        line-height: 1.8rem;
-                        color: #ffffff;
-                        @include medium;
-                    }
-                    &:first-child{
-                        &:hover{
-                            svg{
-                                transform: translateX(.5rem);
-                            }
+                }
+                span{
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    color: #ffffff;
+                    @include medium;
+                }
+                &:first-child{
+                    &:hover{
+                        svg{
+                            transform: translateX(.5rem);
                         }
                     }
-                    &:last-child{
-                        &:hover{
-                            svg{
-                                transform: translateX(.5rem);
-                            }
+                }
+                &:last-child{
+                    &:hover{
+                        svg{
+                            transform: translateX(.5rem);
                         }
                     }
                 }
             }
-        
         }
+    
+    }
+    .swiper{
+        z-index: 2;
     }
     .home-slider-pagination{
         border: .1rem solid #ffffff;
@@ -215,9 +229,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        @include lg{
-            top: 5rem;
-        }
         @include md{
             display: none;
         }
@@ -303,9 +314,7 @@
             }
         }
     }
-    .hero-backg{
-        
-    }
+
     &#contact-hero{
         .hero-section{
             max-height: 31.2rem;
@@ -351,5 +360,8 @@
         .hero-section{
             height: 31.2rem;
         }
+    }
+    &#error-hero{
+        margin-bottom: -5.2rem;
     }
 }

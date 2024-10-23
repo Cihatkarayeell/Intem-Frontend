@@ -41,5 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 @@include('partial/news-detail-modal.js')
 @@include('partial/block-multiple-slider.js')
 @@include('partial/file-input.js')
+@@include('partial/top-button.js')
+@@include('partial/form-modal.js')
 
 

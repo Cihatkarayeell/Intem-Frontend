@@ -103,12 +103,11 @@
             max-width: 80.9rem;
             max-height: 45.8rem;
             right: 7rem;
-            height: 45.8rem;
             padding-top: 6.4rem;
             justify-content: flex-start;
         }
         @include xl{
-            height: 34.4rem;
+            height: auto;
             padding: 4.8rem 7.7rem 5rem 6.2rem;
         }
         @include md{
@@ -117,6 +116,8 @@
             padding-top: 3.5rem;
             padding-right: 3.5rem;
             padding-left: 3.5rem;
+            height: auto;
+
         }
         @include sm{
             position: relative;
@@ -132,7 +133,7 @@
         @include mini{
             padding-left: 3rem;
             padding-right: 3rem;
-            
+            padding-bottom: 3rem;
         }
         .header{
             .title{
@@ -146,7 +147,7 @@
                     margin-bottom: 2rem;
                 }
                 @include mini{
-                    margin-bottom: 2.5rem;
+                    margin-bottom: 2rem;
                 }
             }
         }
@@ -155,7 +156,7 @@
             line-height: 3.4rem;
             color: #000000;
             @include light;
-            margin-bottom: 3rem;
+            margin-bottom: 0;
             opacity: .8;
             .strong{
                 @include medium;
@@ -167,11 +168,16 @@
             @include md{
                 font-size: 1.7rem;
                 line-height: 2rem;
-                margin-bottom: 0;
             }
             @include mini{
                 font-size: 1.5rem;
                 line-height: 1.8rem;
+            }
+        }
+        .card-link{
+            margin-top: 3rem;
+            @include sm{
+                margin-top: 2rem;
             }
         }
     }
@@ -204,6 +210,9 @@
     }
     &#aı-generated{
         margin-bottom: 8.4rem;
+        @include mini{
+            margin-top:2rem ;
+        }
         .text-card{
             padding-bottom: 7.1rem;
             .header{
@@ -226,6 +235,9 @@
                     line-height: 2rem;
                 }
             }
+            @include sm{
+                padding-bottom: 2rem;
+            }
         }
     }
     &#hr-activities{
@@ -236,6 +248,9 @@
         .text-card{
             .title{
                 margin-bottom: 3.7rem;
+                @include mini{
+                    margin-bottom: 2rem;
+                }
             }
         }
     }

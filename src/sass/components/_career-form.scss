@@ -1,7 +1,7 @@
 .section-career-form{
     margin-top: 7.3rem;
-    @include bigger-than-xl{
-        padding: 0 3rem;
+    @include xl{
+        padding: 0 5rem;
     }
     @include md{
         padding: 0 3rem;

@@ -8,8 +8,15 @@
         padding-left: 3rem;
         padding-right: 3rem;
     }
+    @include xl{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
     @include sm{
-        padding-top: 0;
+        padding-top: 0; 
+        padding-left: 0rem;
+        padding-right: 0rem;
+
     }
     
     .design-card{
@@ -17,11 +24,13 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        align-items: stretch;
+        height: 100% !important;
         @include bigger-than-xl{
             height: 78.1rem !important;
         }
         @include md{
-            height: 38rem !important;
+            height: 100% !important;
             justify-content: center;
         }
         @include sm{
@@ -33,12 +42,14 @@
             padding-top: 6.4rem;
             padding-left: 6rem;
             padding-right: 10.9rem;
+            padding-bottom: 2rem;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: column;
             max-width: 76.5rem;
-            height: 100%;
+            height:auto;
+            max-width: 59.7%;
             @include bigger-than-xl{
                 max-width: 105.2rem;
                 padding-top: 8.8rem;
@@ -48,10 +59,9 @@
                 padding-left: 4rem;
                 padding-top: 4.3rem;
                 padding-right: 7.3rem;
-            }
-            @include md{
                 max-width: 51.2rem;
             }
+            
             @include sm{
                 width: 100%;
                 max-width: 100%;
@@ -62,6 +72,7 @@
             @include mini{
                 padding: 0 3rem;
                 padding-top: 2.6rem;
+                padding-right: 3rem;
             }
             .title{
                 font-size: 1.7rem;
@@ -127,7 +138,6 @@
         }
         .img{
             position: relative;
-            height: 100%;
             width: 100%;
             &:after{
                 content: "";
@@ -144,17 +154,16 @@
             }
             @include md{
                 width: 34.5rem;
-                height: 38rem;
             }
             @include sm{
                 width: 100%;
                 max-height: 39rem;
                 background-color: rgb(244, 241, 238,.5);
                 padding: 0 5rem;
+                height: 39rem;
             }
             @include mini{
                 padding: 0 3rem;
-                height: 100%;
                 max-height: 100%;
             }
             img{
@@ -176,6 +185,9 @@
                     &:last-child{
                         margin-bottom: 0;
                     }
+                }
+                @include sm{
+                    padding-right: 3rem;
                 }
             }
         }
@@ -205,6 +217,9 @@
                         font-size: 2.6rem;
                         line-height: 2.8rem;
                     }
+                }
+                @include sm{
+                    padding-right: 3rem;
                 }
             }
         }
@@ -252,6 +267,9 @@
                         margin-bottom: 0;
                     }
                 }
+                @include sm{
+                    padding-right: 3rem;
+                }
             }
         }
     }
@@ -260,7 +278,7 @@
         .design-card{
             .text{
                 padding-right: 7.5rem;
-                @include mini{
+                @include sm{
                     padding-right: 3rem;
                 }
                 .desc{
@@ -282,6 +300,7 @@
     }
     &#yarn-rd{
         padding-bottom: 2rem;
+     
         .text{
             background-color: rgb(244, 241, 238,.5);
             padding-bottom: 3rem;
@@ -299,6 +318,9 @@
                     &:last-child{
                         margin-bottom: 0;
                     }
+                }
+                @include sm{
+                    padding-right: 3rem;
                 }
             }
         }

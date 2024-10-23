@@ -2,20 +2,7 @@
 {% extends "./layout/layout-general.html" %}
 {% block title %}Front end Starter Kit{% endblock %}
 {%block bodyClass %}body-home{% endblock %} {% block content %}
-<div id="cookieModal" class="cookie-modal">
-    <div class="cookie-content">
-      <span id="closeModal" class="close">&times;</span>
-      <h2>Çerez Politikası</h2>
-      <p>
-        Bu web sitesinde çerezler kullanılıyor! Detaylı bilgi için 
-        <a href="#">Çerez Politikası</a> içeriğini okuyabilirsiniz.
-      </p>
-      <div class="cookie-buttons">
-        <button class="accept-btn">Kabul et</button>
-        <button class="reject-btn">Reddet</button>
-      </div>
-    </div>
-</div>
+
 <section class="section subpage-hero" id="design-hero">
     <div class="hero-section hero">
         <div class="hero-backg" style="background: url(./img/hero-backg/design-backg.png); background-position: center;
@@ -58,7 +45,7 @@
 <section class="section">
     <div class="design-block sub-page" id="product-development">
         <div class="container">
-            <div class="design-card" style="height: 56.8rem;">
+            <div class="design-card">
                 <div class="text">
                     <div class="header">
                         <h1 class="title">PRODUCT DEVELOPMENT</h1>
@@ -110,8 +97,16 @@
 </section>
 <section class="section">
     <div class="image-layout sub-page-design" id="img-layout">
-        <div class="image">
-            <img src="./img/card-img/design-img-wrap-1.png" alt="">
+        <div class="image first">
+            <div class="img">
+                <img src="./img/card-img/img-layout-1.png" alt="">
+            </div>
+            <div class="img">
+                <img src="./img/card-img/playful-card.png" alt="">
+                <div class="img-card-text">
+                    <p>DETAILS MAKE DIFFERENCE</p>
+                </div>
+            </div>
         </div>
         <div class="image">
             <img src="./img/card-img/design-img-wrap-2.png" alt="">

@@ -28,7 +28,9 @@
         max-width: 90%;
       }
       @include mini{
-        height: 50%;
+        height: 22%;
+        max-width: 85%;
+        width: 100%;
       }
       .close {
         position: absolute;

@@ -5,9 +5,14 @@
     max-height: 66.9rem;
     @include bigger-than-xl{
         max-height: 89.2rem;
+        padding: 0 5rem;
+    }
+    @include xl{
+        padding: 0 3rem;
     }
     @include sm{
         max-height: 100%;
+        padding: 0;
     }
     .our-story-card{
         display: flex;

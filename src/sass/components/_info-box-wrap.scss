@@ -17,6 +17,10 @@
             margin: 0 auto;
         }
     }
+    @include lg{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
     @include md{
         .container{
             max-width: 62.94rem;
@@ -52,8 +56,9 @@
                 max-width: 19.57rem;
                 width: 100%;
             }
-            @include mini{
-                max-width: 16.9rem;
+            @include sm{
+                max-width: calc((100% / 2) - 1rem);
+                width: 100%;
             }
             .top-text{
                 height: 50%;

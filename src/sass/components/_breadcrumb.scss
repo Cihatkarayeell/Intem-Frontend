@@ -1,6 +1,17 @@
 .breadcrumb{
     width: 100%;
     padding-top: 1.6rem;
+    @include bigger-than-xl{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    @include xl{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    @include mini{
+        display: none;
+    }
     &.contact{
         .container{
             max-width: 128rem;
@@ -27,16 +38,7 @@
             justify-content: center;
         }
     }
-    @include xl{
-        padding-left: 3rem;
-    }
-    @include md{
-        padding-left: 5rem;
-    }
-    @include sm{
-        padding-left: 5rem;
-    }
-    @include mini{
-        padding-left: 3rem;
-    }
+    
+    
+    
 }

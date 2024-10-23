@@ -10,14 +10,14 @@
   border-radius: .2rem;
   overflow: hidden;
   transition: bottom 0.5s ease-in-out;
-  z-index: 2;
+  z-index: 3;
   @include mini{
     width: 35rem;
     margin: 0 3rem;
     right: 0;
     left: 0;
     width: auto;
-    height: 18rem;
+    height: auto;
   }
 }
 
