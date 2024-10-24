@@ -33,7 +33,7 @@ function moveLanguageButton() {
     const sidebarMenuUl = document.querySelector('.sidebar-menu-ul');
 
     // Eğer genişlik 414 piksel veya daha küçükse
-    if (window.innerWidth <= 414) {
+    if (window.innerWidth <= 480) {
         // Eğer buton zaten sidebar içinde değilse, taşı
         if (languageButton.parentNode !== sidebarMenuUl) {
             sidebarMenuUl.appendChild(languageButton);
