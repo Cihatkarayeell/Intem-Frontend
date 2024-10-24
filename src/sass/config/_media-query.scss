@@ -1,6 +1,6 @@
 // Küçük cihazlar
 @mixin mini {
-  // 414px ve aşağısı
+  // 480px ve aşağısı
   @media (max-width: ($screen-mini )) {
     @content;
   }
