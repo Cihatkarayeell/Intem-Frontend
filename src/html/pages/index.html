@@ -2,7 +2,20 @@
 {% extends "./layout/layout-general.html" %}
 {% block title %}Front end Starter Kit{% endblock %}
 {%block bodyClass %}body-home{% endblock %} {% block content %}
-
+<div class="modal-dialog modal-lg">
+    <div class="modal-box">
+        
+        <h1 class="title">
+            Teşekkürler!
+        </h1>
+        <div class="desc">
+            Form başarı ile gönderildi. En kısa sürede sizinle iletişime geçilecektir.
+        </div>
+        <a href="javascript:;" class="close-button">
+            Kapat
+        </a>
+    </div>
+</div>
 <div id="modal" class="modal video-modal">
     <div class="modal-content">
       <span id="closeModalBtn" class="close">
@@ -515,7 +528,7 @@
             <div class="header">
                 <div class="title">JOIN OUR NEWSLETTER</div>
             </div>
-            <div class="input-layout">
+            <div class="input-layout form-element">
                 <div class="input-group">
                     <label for="name">NAME</label>
                     <input type="text" id="name" placeholder="Your Name">

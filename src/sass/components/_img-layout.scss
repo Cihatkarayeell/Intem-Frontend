@@ -44,12 +44,12 @@
             &:hover{
                 width: 48.9%;
                 .img{
-                    filter: grayscale(1);
+                    filter: grayscale(100%);
                 }
             }
             &:hover ~ .image{
                 width: 22%;
-                filter: contrast(.5);
+                filter: grayscale(100%);
             }
             @include md{
                 max-width: 60%;
@@ -58,7 +58,7 @@
             @include mini{
                 max-width: 67%;
                 width: 100%;
-                filter: grayscale(1);
+                filter: grayscale(100%);
 
                 & ~ .image{
                     max-width: 31%;
@@ -105,7 +105,7 @@
                 .img-card-text{
                     display: block;
                     position: absolute;
-                    bottom: 14.5rem;
+                    bottom: 28.3%;
                     left: 0;
                     padding: 3.9rem 0;
                     background-color: rgb(250, 250, 250,.9);
@@ -209,7 +209,6 @@
         img{
             width: 100%;
             height: 100%;
-            object-fit: cover;
             display: flex;
         }
         @include mini{

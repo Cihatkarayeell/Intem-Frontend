@@ -19,7 +19,7 @@
         align-items: center;
         justify-content: center;
         gap: 0 3.2rem;
-        padding-top: 6rem;
+        padding-top: 6.1rem;
         @include sm{
             flex-direction: column;
         }
@@ -78,6 +78,9 @@
                     color: #000000;
                     opacity: .5;
                     margin-bottom: 4rem;
+                    @include mini{
+                        margin-bottom: 2rem;
+                    }
                 }
             }
             .desc{

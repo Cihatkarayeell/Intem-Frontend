@@ -12,7 +12,7 @@ function initFileUpload() {
             fileNameLabel.textContent = fileName;
         });
     } else {
-        console.error('fileInput veya fileNameLabel bulunamadı.');
+        //console.error('fileInput veya fileNameLabel bulunamadı.');
     }
 }
 
@@ -24,6 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Eğer element varsa fonksiyon çalıştırılıyor
         initFileUpload();
     } else {
-        console.log('.section-career-form bulunamadı, initFileUpload çalıştırılmadı.');
+        //console.log('.section-career-form bulunamadı, initFileUpload çalıştırılmadı.');
     }
 });

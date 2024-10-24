@@ -5,6 +5,7 @@
     }
     @include mini{
         padding: 0 3rem;
+        margin-top: 4rem;
     }
 }
 .news-slider{ 
@@ -43,6 +44,9 @@
             color: #000000;
             opacity: .5;
             margin-bottom: 3.8rem;
+            @include mini{
+                margin-bottom: 2.4rem;
+            }
         }
     }
     .feature-item{

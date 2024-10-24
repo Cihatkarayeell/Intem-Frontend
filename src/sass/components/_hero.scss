@@ -279,13 +279,13 @@
         align-items: center;
         justify-content: center;
         gap: 0 4.5rem;
+        @include sm{
+            gap: 0 1.5rem;
+        }
         .vertical-line{
             height: 8.5rem;
             width: .1rem;
             background-color: #ffffff;
-        }
-        @include sm{
-            display: none;
         }
         .info-item{
             .header{
@@ -298,6 +298,10 @@
                     line-height: 3.8rem;
                     color: #ffffff;
                     @include medium;
+                    @include sm{
+                        font-size: 2.8rem;
+                        line-height:3.4rem;
+                    }
                 }
                 .light-text{
                     font-size: 1.6rem;
@@ -305,6 +309,10 @@
                     color: #ffffff;
                     @include light;
                     margin-left: .5rem;
+                    @include mini{
+                        font-size: 1.4rem;
+                        line-height: 1.8rem;
+                    }
                 }
             }
             .info-desc{
@@ -312,6 +320,7 @@
                 line-height: 1.9rem;
                 color: #ffffff;
                 @include regular;
+                text-align: center;
             }
         }
     }

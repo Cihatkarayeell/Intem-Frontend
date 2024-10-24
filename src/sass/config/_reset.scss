@@ -134,13 +134,18 @@ html {
   q {
     quotes: none;
   }
-
+  img{
+    display: block;
+  }
   blockquote {
     &:before,
     &:after {
       content: '';
       content: none;
     }
+  }
+  .strong{
+    margin: 0 .2rem;
   }
 
   q {

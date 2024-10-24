@@ -299,8 +299,11 @@
         }
     }
     &#yarn-rd{
-        padding-bottom: 2rem;
-     
+        padding-bottom: 0rem;
+        padding-top: 2rem;
+        @include mini{
+            padding-top: 0;
+        }
         .text{
             background-color: rgb(244, 241, 238,.5);
             padding-bottom: 3rem;
@@ -323,6 +326,12 @@
                     padding-right: 3rem;
                 }
             }
+        }
+    }
+    &#product-development{
+        padding-bottom: 0;
+        @include mini{
+            margin-bottom: 4rem;
         }
     }
 }

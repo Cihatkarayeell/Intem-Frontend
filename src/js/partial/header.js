@@ -15,6 +15,16 @@ document.addEventListener('click', (event) => {
     }
 });
 
+document.querySelectorAll('input').forEach(input => {
+    input.addEventListener('focus', function() {
+        document.body.style.zoom = '1'; // Zoom'u sıfırlar
+    });
+
+    input.addEventListener('blur', function() {
+        document.body.style.zoom = ''; // Zoom'u eski haline getirir
+    });
+});
+
     
     
 

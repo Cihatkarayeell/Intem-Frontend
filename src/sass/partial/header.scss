@@ -77,6 +77,10 @@
 						border: none;
 						padding: 0;
 						background-color: transparent;
+						font-size: 1.3rem;
+						line-height: 1.4rem;
+						color: #000000;
+						@include medium;
 						&::placeholder{
 							font-size: 1.3rem;
 							line-height: 1.4rem;
@@ -102,6 +106,7 @@
 						bottom: -11rem;
 						top: auto;
 						background-color: #ffffff;
+						width: 20rem;
 
 					}
 				}

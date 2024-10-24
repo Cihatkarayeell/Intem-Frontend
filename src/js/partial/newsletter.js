@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     } else {
-      console.error('GDPR checkbox bulunamadı.');
+      //console.error('GDPR checkbox bulunamadı.');
     }
   
     // Privacy checkbox için click event listener
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     } else {
-      console.error('Privacy checkbox bulunamadı.');
+      //console.error('Privacy checkbox bulunamadı.');
     }
   });
   

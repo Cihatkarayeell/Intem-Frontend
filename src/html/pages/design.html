@@ -2,7 +2,20 @@
 {% extends "./layout/layout-general.html" %}
 {% block title %}Front end Starter Kit{% endblock %}
 {%block bodyClass %}body-home{% endblock %} {% block content %}
-
+<div class="modal-dialog modal-lg">
+    <div class="modal-box">
+        
+        <h1 class="title">
+            Teşekkürler!
+        </h1>
+        <div class="desc">
+            Form başarı ile gönderildi. En kısa sürede sizinle iletişime geçilecektir.
+        </div>
+        <a href="javascript:;" class="close-button">
+            Kapat
+        </a>
+    </div>
+</div>
 <section class="section subpage-hero" id="design-hero">
     <div class="hero-section hero">
         <div class="hero-backg" style="background: url(./img/hero-backg/design-backg.png); background-position: center;
@@ -71,13 +84,7 @@
     <div class="showroom sub-page" id="yarn-production">
         <div class="showroom-card">
             <div class="card-img">
-                <div class="card-img-wrap">
-                    <div class="column">
-                        <img src="./img/card-img/sampling-column-1.png" alt="">
-                        <img src="./img/card-img/sampling-column-2.png" alt="">
-                    </div>
-                    <img src="./img/card-img/sampling-card.png" alt="">
-                </div>
+                <img src="/img/card-img/design-card-wrap.png" alt="">
             </div>
             <div class="text-card">
                 <div class="header">
@@ -159,15 +166,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
 
 <section class="section newsletter">
     <div class="container">

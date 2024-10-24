@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         } else {
-            console.error('No ".read-more" links or ".news-detail-modal" elements found.');
+            //console.error('No ".read-more" links or ".news-detail-modal" elements found.');
         }
     } else {
-        console.error('No ".news-from-us" element found.');
+        //console.error('No ".news-from-us" element found.');
     }
 });
