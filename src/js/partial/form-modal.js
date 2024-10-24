@@ -1,7 +1,6 @@
 // Sayfada .form sınıfına sahip bir element olup olmadığını kontrol et
 if (document.querySelectorAll('.form-element').length > 0) {
     // Tüm submit butonlarını seç
-    console.log('form-elementine ulsaıldı')
     const submitButtons = document.querySelectorAll('.submit-button');
 
     // Her submit butonuna tıklama olayını ekle
