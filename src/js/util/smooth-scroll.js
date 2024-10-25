@@ -14,7 +14,7 @@ function smoothScrollToTop() {
 }
 
 document.addEventListener('click', event => {
-	if(event.target.tagName !== 'A') {
+	if(event.target.tagName !== 'a') {
 		return false;
 	}
 	const anchor = event.target;
