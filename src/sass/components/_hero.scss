@@ -366,7 +366,8 @@
         color: #000000;
         @include medium;
     }
-    &#search-hero{
+    &#search-hero,
+    #statik-hero{
         .hero-section{
             height: 31.2rem;
         }
@@ -374,4 +375,8 @@
     &#error-hero{
         margin-bottom: -5.2rem;
     }
+    &#statik-hero{
+        height: 31.2rem;
+    }
+
 }

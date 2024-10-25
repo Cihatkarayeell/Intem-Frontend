@@ -4,13 +4,13 @@ app.ourClientsSection = {
     setSwiper: function (slider) {
 
         app.ourClientsSection.swiper = new Swiper(slider.querySelector(".swiper-references"), {
-            speed: 3000,
+            speed:6000,
             lazy: true,
             loop: true,
             autoplay: {
                 delay: 0,
                 disableOnInteraction: true,
-                waitForTransition: true,
+                //waitForTransition: true,
                 reverseDirection: false,
             },
             direction: 'horizontal',

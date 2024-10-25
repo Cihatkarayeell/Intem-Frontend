@@ -3,7 +3,7 @@
 	width: 100%;
 	height: 9.6rem;
 	position: sticky;
-	top: 10;
+	top: 0;
 	left: 0;
 	z-index: 9;
 	.header{
@@ -20,6 +20,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+				position: relative;
 			}
 			.navbar-menu{
 				display: flex;
@@ -46,7 +47,6 @@
 				align-items: center;
 				gap: 0 2.6rem;
 				justify-content: flex-end;
-				position: relative;
 				.language-button{
 					span{
 						font-size: 1.2rem;
@@ -58,11 +58,10 @@
 				}
 				.search-button{
 					position: relative;
-					cursor: pointer;
 				}
 				.search-box{
 					position: absolute;
-					right: calc(100% - 3rem);
+					right: 3rem;
 					top: 50%;
 					transform: translateY(-50%);
 					border: .1rem solid rgb(0, 0, 0, .1);
@@ -73,6 +72,10 @@
 					opacity: 0;
 					visibility: hidden;
 					background-color: #ffffff;
+					@include mini{
+						padding: 0;
+						height: 4.1rem;
+					}
 					input{
 						border: none;
 						padding: 0;
@@ -87,6 +90,11 @@
 							color: #000000;
 							opacity: .8;
 							@include medium;
+						}
+						@include mini{
+							padding: 0 1.2rem;
+							width: 100%;
+							height: 100%;
 						}
 					}
 					.icon.search-box-link{
@@ -103,10 +111,11 @@
 					}
 					@include mini{
 						z-index: 2;
-						bottom: -11rem;
+						bottom: -10rem;
 						top: auto;
 						background-color: #ffffff;
-						width: 20rem;
+						width: 100%;
+						right: 0;
 
 					}
 				}
